@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+html{
+    font-size: 1.125rem;
+}
+
+body{
+    font-family: 'open sans', sans-serif;
+    
+}
+
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 20px;
+
+    /* very high value for the border-radius creates a peel shape */
+}
+
+/* CSS Variables */
+:root{
+ --Very-Pale-Cyan: hsl(193, 100%, 96%);
+ --Very-Dark-Cyan: hsl(192, 100%, 9%);
+ --Grayish-Blue: hsl(208, 11%, 55%);
+ --Pink: hsl(322, 100%, 66%);
+}
+
+/* Header styles */
+header{
+    background-image:url(./images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Very-Pale-Cyan);
+    padding: 2rem 4rem;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.header-btn{
+    border: none;
+    cursor: pointer;
+    padding: 1em 3em;
+    color: var(--Very-Dark-Cyan);
+    background-color: ghostwhite;
+    font-size: 0.85rem;
+    font-family: inherit;
+    box-shadow:  0 0 8px -5px rgb(185, 182, 182);
+}
+
+.header-btn:hover{
+    opacity: 0.9;
+    transition: 2s;
+
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero article, .hero div{
+    width: 50%;
+}
+
+.pink-btn{
+    border: none;
+    color: white;
+    background-color: var(--Pink);
+    cursor: pointer;
+}
+
+.pink-btn:hover{
+    opacity: 0.6;
+    transition: 2s;
+}
+
+.hero .pink-btn{
+    margin-top: 10px;
+    padding: 1.3em 4em;
+}
+
+article{
+    margin-top: 3rem;
+}
+
+.hero article h1{
+    font-size: 2.5em;
+    color: var(--Very-Dark-Cyan);
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.hero article p{
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 1rem;
+    font-size: 0.7375rem;
+    
+}
+
+main{
+    padding: 4rem;
+    position: relative;
+}
+
+.flex-section{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-block: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    box-shadow:  0px 0px 8px  rgb(237, 233, 233);
+}
+
+.reverse-flex{
+    flex-direction: row-reverse;
+}
+
+.flex-section article h2{
+    margin-bottom: 1rem;
+    font-family: 'poppins', sans-serif;
+    font-size: 0.9375rem;
+}
+
+article p{
+    /* padding: 1rem; */
+    font-family: 'poppins', sans-serif;
+    font-size: 0.674rem;
+}
+
+.cta-card{
+    text-align: center;
+    width: 50%;
+    margin-inline: auto;
+    border-radius: 20px;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow:  0px 0px 8px -5px var(--Very-Dark-Cyan);
+    position: absolute;
+    bottom: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cta-card  h1{
+    color: var(--Very-Dark-Cyan);
+    font-size: 1.5em;  
+    margin-bottom: 1rem;
+}
+
+.cta-card .pink-btn{
+    padding: 1.5em 4.5em;
+}
+
+footer{
+    background-color: var(--Very-Dark-Cyan);
+    padding: 8rem 4rem 4rem;
+}
+
+ footer > div{
+    display: flex;
+    margin-top: 20px;
+    gap: 7rem;
+    color: white;
+    font-size: 0.7375rem;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 0.7rem;
+}
+
+small{
+    font-size: 13px;
+    margin-left: auto;
+    
+}
+
+
